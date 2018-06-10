@@ -14,7 +14,8 @@
 
 <body>
     <!--[if IE]><p class="kill-ie">微软都放弃了IE，为啥你却还不放弃？</p><![endif]-->
-    <a class=pdf href=resume.pdf><i class="iconfont icon-pdf"></i> PDF简历</a>
+    <a class=pdf href=resume.pdf>
+        <i class="iconfont icon-pdf"></i> PDF简历</a>
     <p class=last-modified>最后更新时间：2018年06月</p>
     <div class=content>
         <div class=content-bd>
@@ -27,7 +28,6 @@
                     </header>
                     <div class=section-bd>
                         <ul class=section-list>
-
                             <li class="section-content">熟练使用
                                 <em>HTML</em> 、
                                 <em>CSS/CSS3</em> 、
@@ -45,7 +45,6 @@
                                 <em>Vue全家桶</em>，熟悉
                                 <em>Nuxt.js</em>服务端渲染，对
                                 <em>React</em>有一定的了解和使用</li>
-
                             <li class="section-content">熟悉
                                 <em>Webpack</em>打包工具，熟悉
                                 <em>webpack</em>配置并能进行适当的修改，能熟练的使用
@@ -56,14 +55,14 @@
                                 <em>npm</em>包</li>
 
                             <li class="section-content">了解
-                                <em>Node.js</em>开发,自己的博客就是基于
-                                <em>Node.js</em>运行，并运用
-                                <em>Pm2</em> 进行进程保护</li>
-
-                            <li class="section-content">能熟练阅读使用
+                                <em>Node.js</em>开发,能熟练阅读使用
                                 <em>API</em>文档，使用
-                                <em>JS-SDK</em>开发过微信公众号页面，了解
-                                <em>HTTP</em>协议，熟悉常见的前端性能优化方法</li>
+                                <em>JS-SDK</em>开发过微信公众号页面
+                            </li>
+                            <li class="section-content">
+                                了解
+                                <em>HTTP</em>协议，熟悉常见的前端性能优化方法
+                            </li>
                         </ul>
                     </div>
                 </section>
@@ -76,90 +75,72 @@
                     <div class=section-bd>
                         <div class=item>
                             <header class=item-hd>
-                                <span class=item-time>2017.02</span>
-                                <a class="btn item-more" href=http://bookbox.toadw.cn target=_blank>Link</a>
-                                <h3 class=item-name>图书盒子Pro·微信小程序
+                                <span class=item-time>2018.02</span>
+                                <!-- <a class="btn item-more" href= target=_blank>Link</a> -->
+                                <h3 class=item-name>速运物流管理系统
                                 </h3>
                             </header>
                             <div class=item-bd>
                                 <p class=section-content>
-                                    <strong>产品设计</strong>
-                                    <strong>界面设计</strong>
-                                    <strong>前端开发</strong>
-                                    该项目基于微信小程序
-                                    <em>MINA框架</em>的
-                                    <em>WXML</em>、
-                                    <em>WXSS</em>，视图层采用
-                                    <em>Flex弹性布局</em>，逻辑层采用模块化的开发，项目使用了开放的图书馆数据接口，后端采用
-                                    <em>LeanCloud后端云</em>进行云端数据存储，极大方便了同学查询馆藏图书及借阅情况，上线
-                                    <em>2周</em>用户近
-                                    <em>1000人</em>，Github获得近
-                                    <em>50个Star</em>。
+                                    我在此项目负责了项目的结构划分及开发工作，这个项目大部分由我一人开发，项目基于Vue 全家桶、Element-ui、Less、Echarts 等进行了多页面开发并使用了Webpack打包部署。项目实现了物流货车匹配、货车电子合同的签订 、车的跟踪、货车异常处理，并实现物流的各项参数采集及呈现，还集合了后面的财务结算及开票处理。项目根据场景写了大量可复用组件，并根据场需求对Element-ui进行了源码的选读及修改。随着项目日渐庞大，考虑到打包速度，将Webpack@3
+                                    进行Webpack@4 的升级，升级后打包速度大大降低。
                                 </p>
                             </div>
                         </div>
                         <div class=item>
                             <header class=item-hd>
                                 <span class=item-time>2016.12</span>
-                                <a class="btn item-more" href=http://think.ucoon.cn target=_blank>Link</a>
-                                <h3 class=item-name>思客拓客·创业想法交流平台</h3>
+                                <!-- <a class="btn item-more" href= target=_blank>Link</a> -->
+                                <h3 class=item-name>物流管理移动端</h3>
                             </header>
                             <div class=item-bd>
                                 <p class=section-content>
-                                    <strong>界面设计</strong>
-                                    <strong>前端开发</strong>
-                                    该项目为移动端产品，利用了
-                                    <em>HTML5</em>、
-                                    <em>CSS3</em>、
-                                    <em>Sass</em>、
-                                    <em>Iconfont</em>、
-                                    <em>rem自适应</em>等技术来丰富展示前端界面， 使用
-                                    <em>BaiduTemplate</em>做为模板引擎进行数据逻辑处理，通过
-                                    <em>Ajax</em>与后端进行数据交互，实现了大量的前后端分离，以及复杂的业务逻辑。
+                                    此项目也是基于Vue全家桶、Vux 开发。项目基于rem来进行页面适配。项目根据货主，车主进行两套系统，并对相应的场景进行优化。项目遇到了因为多个页面数据通用，刷新数据丢失问题，由此通过Vux并实现刷新前判断store是否有数据，没有数据则进行重新请求数据。
                                 </p>
                             </div>
                         </div>
                         <div class=item>
                             <header class=item-hd>
                                 <span class=item-time>2016.09</span>
-                                <a class="btn item-more" href=http://www.ucoon.cn target=_blank>Link</a>
-                                <h3 class=item-name>有空·时间售卖与技能交易平台</h3>
+                                <!-- <a class="btn item-more" href= target=_blank>Link</a> -->
+                                <h3 class=item-name>物流数据统计系统 </h3>
                             </header>
                             <div class=item-bd>
                                 <p class=section-content>
-                                    <strong>界面设计</strong>
-                                    <strong>前端开发</strong>
-                                    该平台是基于微信公众号的移动端Web应用，采用了
-                                    <em>Vue.js</em>做为
-                                    <em>MVVM框架</em>，实现了部分数据的前后端分离。产品上线后不断的维护与重构，优化用户体验及性能。
+                                    此项目是基于 Vue 、Echarts 的数据呈现的统计页面。项目实现物流数据，按照不同等级，时间进行正确的数据统计及呈现，方便相关进行数据跟踪及之后的处理。
                                 </p>
                             </div>
                         </div>
                         <div class=item>
                             <header class=item-hd>
                                 <span class=item-time>2016.04</span>
-                                <a class="btn item-more" href=http://toadw.cn/baiduIFE-task/ target=_blank>Link</a>
-                                <h3 class=item-name>百度前端技术学院任务 · 前端练习</h3>
+                                <!-- <a class="btn item-more" href= target=_blank>Link</a> -->
+                                <h3 class=item-name>贸易系统 </h3>
                             </header>
                             <div class=item-bd>
                                 <p class=section-content>
-                                    通过百度前端技术学院的任务制度，较为系统的学习了Web前端相关的基础知识，通过任务实践，制作
-                                    <em>demo</em>，并将代码托管在
-                                    <em>Github</em>上，使用
-                                    <em>Github Pages
-                                    </em>进行demo展示。
+                                    此项目因为是之前项目，所以我的工作主要是进行相应的维护，及之后的活动主题页面，通过这些页面的修改、维护及重构，大大提高了我阅读代码和重构代码的能力。
+                                </p>
+                            </div>
+                        </div>
+                        <div class=item>
+                            <header class=item-hd>
+                                <span class=item-time>2016.04</span>
+                                <!-- <a class="btn item-more" href= target=_blank>Link</a> -->
+                                <h3 class=item-name>硬件配套软件项目</h3>
+                            </header>
+                            <div class=item-bd>
+                                <p class=section-content>
+                                    此项目是为了配套硬件而开发。项目基于hybird 开发，实现对传感器传来数据处理、计算，并根据相应公式呈现相应的函数曲线。
                                 </p>
                             </div>
                         </div>
                     </div>
                 </section>
-
-
-
                 <section class=prize>
                     <header class=section-hd>
                         <span class=section-title-l></span>
-                        <h2 class=section-title>个人作品及文章</h2>
+                        <h2 class=section-title>作品及文章</h2>
                         <span class=section-title-r></span>
                     </header>
                     <div class=section-bd>
@@ -176,19 +157,16 @@
                                 <em>Vue-ssr</em>
                                 <em>mySql</em>
                                 <em>PHP</em>
-                                <em>Node.js</em> 及
-                                <em>PM2</em>进行进程保护 的博客页面，并写了 基于
-                                <em>crontab</em> 的更新部署
-                                <em>shell</em> 脚本，该脚本进行每隔5分钟 检查版本库是否更新，如更新则进行项目更新部署。博客实现文章笔记的新增、修改及删除的功能。也部署了基于 Github 的公共 API
-                                的
-                                <em>gitment</em>的评论功能。基本完成了博客的基本要素。
+                                <em>Node.js</em>
+                                <em>PM2</em>
+                                <em>crontab</em> 完成的博客页面。博客实现文章笔记的新增、修改、删除 及评论功能。基本完成了博客的基本要素。
                             </li>
-
                             <li class="section-content">
                                 <a target="_blank" href="https://github.com/chenyeah/datepick">datepick</a>：此项目是根据业务需要 仿制了 element-ui 基于 jQuery 日期及日期范围选择的 jQuery 插件。</li>
 
                             <li class="section-content">
-                                    <a target="_blank" href="https://juejin.im/entry/5b07b71b6fb9a07ac363e5eb">基于Node.js 的抖音去水印视频下载脚本</a>：此文章是根据兴趣，依据其他网站实现的接口,写了基于<code data-backticks="3">Node.js</code> 抖音去水印下载地址的解析。文章在掘金和我的博客都可访问。
+                                <a target="_blank" href="https://juejin.im/entry/5b07b71b6fb9a07ac363e5eb">基于Node.js 的抖音去水印视频下载脚本</a>：此文章是根据兴趣，依据其他网站实现的接口,写了基于
+                                <code data-backticks="3">Node.js</code> 抖音去水印下载地址的解析脚本。
                             </li>
                         </ul>
                     </div>
@@ -239,40 +217,45 @@
                 </section>
                 <section class="skill-level">
                     <h3>HTML</h3>
-                    <div class="item i-html">
-                        <i class="in"></i>
-                        <i class="out"></i>
+                    <div class="item">
+                        <i class="in" style="flex:9"></i>
+                        <i class="out" style="flex:1"></i>
                     </div>
-                    <h3>CSS</h3>
-                    <div class="item i-css">
-                        <i class="in"></i>
-                        <i class="out"></i>
+                    <h3>CSS / CSS3</h3>
+                    <div class="item">
+                        <i class="in" style="flex:8.5"></i>
+                        <i class="out" style="flex:1.5"></i>
                     </div>
-                    <h3>JavaScript</h3>
-                    <div class="item i-js">
-                        <i class="in"></i>
-                        <i class="out"></i>
+                    <h3>JavaScript / ES6</h3>
+                    <div class="item">
+                        <i class="in" style="flex:8"></i>
+                        <i class="out" style="flex:2"></i>
                     </div>
-                    <h3>Sass</h3>
-                    <div class="item i-sass">
-                        <i class="in"></i>
-                        <i class="out"></i>
+                    <h3>Vue</h3>
+                    <div class="item">
+                        <i class="in" style="flex:7.8"></i>
+                        <i class="out" style="flex:2.2"></i>
                     </div>
-                    <h3>PhotoShop</h3>
-                    <div class="item i-ps">
-                        <i class="in"></i>
-                        <i class="out"></i>
+                    <h3>React</h3>
+                    <div class="item">
+                        <i class="in" style="flex: 7;"></i>
+                        <i class="out" style="flex:3"></i>
+                    </div>
+                    <h3>Nodejs</h3>
+                    <div class="item">
+                        <i class="in" style="flex:5.5"></i>
+                        <i class="out" style="flex:4.5"></i>
+                    </div>
+                    <h3>PHP</h3>
+                    <div class="item">
+                        <i class="in" style="flex:5"></i>
+                        <i class="out" style="flex:5"></i>
                     </div>
                 </section>
-
-
             </header>
 
         </div>
-        <footer class=print-footer>
-            <a class=footer-link href=http://resume.toadw.cn target=_blank>
-                <i class="iconfont icon-link"></i> 网页版简历：resume.toadw.cn</a>
-        </footer>
+
     </div>
 </body>
 

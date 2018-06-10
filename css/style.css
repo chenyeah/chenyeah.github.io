@@ -91,7 +91,6 @@ html {
     line-height: 1;
 }
 
-
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -355,7 +354,7 @@ a {
 }
 .content-hd .skill-level .item {
     display: flex;
-    width: 260px;
+    width: 100%;
     height: 12px;
     border-radius: 6px;
     margin-bottom: 15px;
@@ -376,36 +375,6 @@ a {
 }
 .content-hd .skill-level .item .out:last-child {
     border-radius: 0 6px 6px 0;
-}
-.content-hd .skill-level .i-html .in {
-    flex: 8;
-}
-.content-hd .skill-level .i-html .out {
-    flex: 2;
-}
-.content-hd .skill-level .i-css .in {
-    flex: 7;
-}
-.content-hd .skill-level .i-css .out {
-    flex: 3;
-}
-.content-hd .skill-level .i-js .in {
-    flex: 6.5;
-}
-.content-hd .skill-level .i-js .out {
-    flex: 3.5;
-}
-.content-hd .skill-level .i-sass .in {
-    flex: 6;
-}
-.content-hd .skill-level .i-sass .out {
-    flex: 4;
-}
-.content-hd .skill-level .i-ps .in {
-    flex: 7.5;
-}
-.content-hd .skill-level .i-ps .out {
-    flex: 2.5;
 }
 @media screen and (max-width: 1024px) {
     .content-hd .skill-level {
@@ -432,9 +401,9 @@ a {
 .content-hd .contact {
     padding-top: 20px;
 }
-.content-hd .contact ul{
-  padding: 0;
-  list-style: none;
+.content-hd .contact ul {
+    padding: 0;
+    list-style: none;
 }
 @media screen and (max-width: 1024px) {
     .content-hd .contact {
@@ -492,7 +461,7 @@ a {
 }
 .content-bd .content-left {
     flex: 6.5;
-    padding: 20px 30px 50px;
+    padding: 20px 30px 20px;
 }
 @media screen and (max-width: 1024px) {
     .content-bd .content-left {
@@ -503,7 +472,7 @@ a {
 }
 .content-bd .content-right {
     box-sizing: border-box;
-    padding: 20px 30px 50px;
+    padding: 20px 30px 20px;
     flex: 3.5;
     background: #f4f4f4;
 }
@@ -559,7 +528,7 @@ a {
 }
 .content-bd .section-list {
     padding: 10px 0 5px 20px;
-    list-style-type:dec;
+    list-style-type: dec;
 }
 .content-bd .item-hd {
     position: relative;
@@ -597,6 +566,7 @@ a {
 .content-bd .item-hd .item-name {
     display: inline-block;
     float: left;
+    color: #ec7175;
 }
 .content-bd .item-bd {
     margin-bottom: 5px;
@@ -705,28 +675,6 @@ a {
         margin-left: 0;
     }
 }
-
-footer {
-    text-align: center;
-}
-footer .footer-link {
-    display: inline-block;
-    color: #d1d1d1;
-    margin-bottom: 25px;
-}
-@media screen and (max-width: 1024px) {
-    footer .footer-link {
-        margin-top: 25px;
-    }
-}
-footer .footer-link .icon-link {
-    color: #d1d1d1;
-    font-size: 16px;
-}
-footer.print-footer {
-    display: none;
-}
-
 ::-webkit-scrollbar {
     background-color: #f1f1f1;
     overflow: visible;
