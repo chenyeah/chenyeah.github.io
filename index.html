@@ -1,37 +1,278 @@
 <!DOCTYPE html>
-<html ng-app="deerResume">
+<html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DeerResume</title>
-  <link href="image/browser.png" rel="shortcut icon">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/yue.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="bower/components/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="bower/components/ng-notify/dist/ng-notify.min.css">
-  <script src="bower/components/jquery/dist/jquery.min.js"></script>
-  <script src="bower/components/angular/angular.min.js"></script>
-  <script src="bower/components/angular-route/angular-route.min.js"></script>
-  <script src="bower/components/angular-sanitize/angular-sanitize.min.js"></script>
-  <script src="bower/components/showdown/compressed/showdown.js"></script>
-  <script src="bower/components/ng-notify/dist/ng-notify.min.js"></script>
-  <script src="js/wizMarkdown.min.js"></script>
-  <script src="js/jspdf.min.js"></script>
-  <script src="js/jspdf.plugin.addhtml.js"></script>
-  <script src="bower/components/angular-cookies/angular-cookies.min.js"></script>
-  <script src="bower/components/angularLocalStorage/src/angularLocalStorage.js"></script>
-  <script src="js/app.js"></script>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>简历 | 陈晔</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-  <base target="_blank">
-  <div ng-view id="resume_body"></div>
-  <form action="http://pdf.ftqq.com" method="post" target="_blank" id="hform">
-    <input type="hidden" name="title"/>
-    <input type="hidden" name="subtitle"/>
-    <input type="hidden" name="content"/>
-    <input type="hidden" name="pdfkey"/>
-  </form>  
+    <!--[if IE]><p class="kill-ie">微软都放弃了IE，为啥你却还不放弃？</p><![endif]-->
+    <p class=last-modified>最后更新时间：2018年06月</p>
+    <div class=content>
+        <div class=content-bd>
+            <div class=content-left>
+                <section class=skill>
+                    <header class=section-hd>
+                        <span class=section-title-l></span>
+                        <h2 class=section-title>专业技能</h2>
+                        <span class=section-title-r></span>
+                    </header>
+                    <div class=section-bd>
+                        <ul class=section-list>
+
+                            <li class="section-content">熟练使用
+                                <em>HTML</em> 、
+                                <em>CSS/CSS3</em> 、
+                                <em>Sass/Less</em> ,熟系
+                                <em>Flex</em> 布局和移动端
+                                <em>rem/vw vh</em> 布局，熟悉w3c标准，对HTML语义化有一定的了解。熟练运用浏览器兼容技术，熟练进行前端性能优化设计。</li>
+
+                            <li class="section-content">熟练使用
+                                <em>ES5</em>，和
+                                <em>Promise、Async/Await</em> 等
+                                <em>ES6 语法</em>
+                            </li>
+
+                            <li class="section-content">熟悉
+                                <em>Vue全家桶</em>，熟悉
+                                <em>Nuxt.js</em>服务端渲染，对
+                                <em>React</em>有一定的了解和使用</li>
+
+                            <li class="section-content">熟悉
+                                <em>Webpack</em>打包工具，熟悉
+                                <em>webpack</em>配置并能进行适当的修改，能熟练的使用
+                                <em>Git/SVN</em>版本控制工具，
+                                <em>npm/yarn</em>等包管理工具</li>
+
+                            <li class="section-content">参与过开源项目的翻译并贡献过少量代码，发布过自己的
+                                <em>npm</em>包</li>
+
+                            <li class="section-content">了解
+                                <em>Node.js</em>开发,自己的博客就是基于
+                                <em>Node.js</em>运行，并运用
+                                <em>Pm2</em> 进行进程保护</li>
+
+                            <li class="section-content">能熟练阅读使用
+                                <em>API</em>文档，使用
+                                <em>JS-SDK</em>开发过微信公众号页面，了解
+                                <em>HTTP</em>协议，熟悉常见的前端性能优化方法</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class=project>
+                    <header class=section-hd>
+                        <span class=section-title-l></span>
+                        <h2 class=section-title>项目经验</h2>
+                        <span class=section-title-r></span>
+                    </header>
+                    <div class=section-bd>
+                        <div class=item>
+                            <header class=item-hd>
+                                <span class=item-time>2017.02</span>
+                                <a class="btn item-more" href=http://bookbox.toadw.cn target=_blank>Link</a>
+                                <h3 class=item-name>图书盒子Pro·微信小程序
+                                </h3>
+                            </header>
+                            <div class=item-bd>
+                                <p class=section-content>
+                                    <strong>产品设计</strong>
+                                    <strong>界面设计</strong>
+                                    <strong>前端开发</strong>
+                                    该项目基于微信小程序
+                                    <em>MINA框架</em>的
+                                    <em>WXML</em>、
+                                    <em>WXSS</em>，视图层采用
+                                    <em>Flex弹性布局</em>，逻辑层采用模块化的开发，项目使用了开放的图书馆数据接口，后端采用
+                                    <em>LeanCloud后端云</em>进行云端数据存储，极大方便了同学查询馆藏图书及借阅情况，上线
+                                    <em>2周</em>用户近
+                                    <em>1000人</em>，Github获得近
+                                    <em>50个Star</em>。
+                                </p>
+                            </div>
+                        </div>
+                        <div class=item>
+                            <header class=item-hd>
+                                <span class=item-time>2016.12</span>
+                                <a class="btn item-more" href=http://think.ucoon.cn target=_blank>Link</a>
+                                <h3 class=item-name>思客拓客·创业想法交流平台</h3>
+                            </header>
+                            <div class=item-bd>
+                                <p class=section-content>
+                                    <strong>界面设计</strong>
+                                    <strong>前端开发</strong>
+                                    该项目为移动端产品，利用了
+                                    <em>HTML5</em>、
+                                    <em>CSS3</em>、
+                                    <em>Sass</em>、
+                                    <em>Iconfont</em>、
+                                    <em>rem自适应</em>等技术来丰富展示前端界面， 使用
+                                    <em>BaiduTemplate</em>做为模板引擎进行数据逻辑处理，通过
+                                    <em>Ajax</em>与后端进行数据交互，实现了大量的前后端分离，以及复杂的业务逻辑。
+                                </p>
+                            </div>
+                        </div>
+                        <div class=item>
+                            <header class=item-hd>
+                                <span class=item-time>2016.09</span>
+                                <a class="btn item-more" href=http://www.ucoon.cn target=_blank>Link</a>
+                                <h3 class=item-name>有空·时间售卖与技能交易平台</h3>
+                            </header>
+                            <div class=item-bd>
+                                <p class=section-content>
+                                    <strong>界面设计</strong>
+                                    <strong>前端开发</strong>
+                                    该平台是基于微信公众号的移动端Web应用，采用了
+                                    <em>Vue.js</em>做为
+                                    <em>MVVM框架</em>，实现了部分数据的前后端分离。产品上线后不断的维护与重构，优化用户体验及性能。
+                                </p>
+                            </div>
+                        </div>
+                        <div class=item>
+                            <header class=item-hd>
+                                <span class=item-time>2016.04</span>
+                                <a class="btn item-more" href=http://toadw.cn/baiduIFE-task/ target=_blank>Link</a>
+                                <h3 class=item-name>百度前端技术学院任务 · 前端练习</h3>
+                            </header>
+                            <div class=item-bd>
+                                <p class=section-content>
+                                    通过百度前端技术学院的任务制度，较为系统的学习了Web前端相关的基础知识，通过任务实践，制作
+                                    <em>demo</em>，并将代码托管在
+                                    <em>Github</em>上，使用
+                                    <em>Github Pages
+                                    </em>进行demo展示。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section class=prize>
+                    <header class=section-hd>
+                        <span class=section-title-l></span>
+                        <h2 class=section-title>个人作品及文章</h2>
+                        <span class=section-title-r></span>
+                    </header>
+                    <div class=section-bd>
+                        <ul class=section-list>
+
+                            <li class="section-content">
+                                <a target="_blank" href="https://github.com/chenyeah/vue-picview">vue-picview</a>和
+                                <a target="_blank" href="https://github.com/chenyeah/element-picview">element-picview</a>：项目是基于Vue 的图片查看组件，支持图片放大缩小及旋转常规常规查看图片方式，并发布了公众NPM包。
+                            </li>
+
+                            <li class="section-content">
+                                <a target="_blank" href="https://github.com/chenyeah/chenyeah">Blog</a>：此项目是基于
+                                <em>Vue全家桶</em>
+                                <em>Vue-ssr</em>
+                                <em>mySql</em>
+                                <em>PHP</em>
+                                <em>Node.js</em> 及
+                                <em>PM2</em>进行进程保护 的博客页面，并写了 基于
+                                <em>crontab</em> 的更新部署
+                                <em>shell</em> 脚本，该脚本进行每隔5分钟 检查版本库是否更新，如更新则进行项目更新部署。博客实现文章笔记的新增、修改及删除的功能。也部署了基于 Github 的公共 API
+                                的
+                                <em>gitment</em>的评论功能。基本完成了博客的基本要素。
+                            </li>
+
+                            <li class="section-content">
+                                <a target="_blank" href="https://github.com/chenyeah/datepick">datepick</a>：此项目是根据业务需要 仿制了 element-ui 基于 jQuery 日期及日期范围选择的 jQuery 插件。</li>
+
+                            <li class="section-content">
+                                    <a target="_blank" href="https://juejin.im/entry/5b07b71b6fb9a07ac363e5eb">基于Node.js 的抖音去水印视频下载脚本</a>：此文章是根据兴趣，依据其他网站实现的接口,写了基于<code data-backticks="3">Node.js</code> 抖音去水印下载地址的解析。文章在掘金和我的博客都可访问。
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <header class="content-right content-hd">
+                <section class="title">
+                    <div class="name">
+                        <h1>陈晔</h1>
+                    </div>
+                    <h2 class="job">Web前端开发工程师</h2>
+                </section>
+                <section class=info>
+                    <h2>男 / 1994.10</h2>
+                    <h3>本科/江苏大学京江学院</h3>
+                    <h3>工作年限：2年</h3>
+                    <h3>期望薪资：11K</h3>
+                </section>
+                <section class=contact>
+                    <ul>
+                        <li>
+                            <a href="https://chenyeah.com" target=_blank>
+                                <i class="iconfont icon-homepage"></i>
+                                <span class=contact-link>chenyeah.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=https://github.com/chenyeah target=_blank>
+                                <i class="iconfont icon-github"></i>
+                                <span class=contact-link>github.com/chenyeah</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href=mailto:yuyehack@gmail.com target=_blank>
+                                <i class="iconfont icon-email"></i>
+                                <span class=contact-link>yuyehack@gmail.com</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href=tel:18068838297 target=_blank>
+                                <i class="iconfont icon-phone"></i>
+                                <span class=contact-link>18068838297</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="skill-level">
+                    <h3>HTML</h3>
+                    <div class="item i-html">
+                        <i class="in"></i>
+                        <i class="out"></i>
+                    </div>
+                    <h3>CSS</h3>
+                    <div class="item i-css">
+                        <i class="in"></i>
+                        <i class="out"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="item i-js">
+                        <i class="in"></i>
+                        <i class="out"></i>
+                    </div>
+                    <h3>Sass</h3>
+                    <div class="item i-sass">
+                        <i class="in"></i>
+                        <i class="out"></i>
+                    </div>
+                    <h3>PhotoShop</h3>
+                    <div class="item i-ps">
+                        <i class="in"></i>
+                        <i class="out"></i>
+                    </div>
+                </section>
+
+
+            </header>
+
+        </div>
+        <footer class=print-footer>
+            <a class=footer-link href=http://resume.toadw.cn target=_blank>
+                <i class="iconfont icon-link"></i> 网页版简历：resume.toadw.cn</a>
+        </footer>
+    </div>
 </body>
 
 </html>
