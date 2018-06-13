@@ -180,7 +180,6 @@ body {
   -webkit-text-size-adjust: none;
   background-color: #eee;
   overflow: auto;
-  padding-top: 5px;
 }
 .pdf {
   display: inline-block;
@@ -221,106 +220,33 @@ body {
 .content-hd {
   width: 100%;
   height: inherit;
-  background-color: #eee;
-  overflow: hidden;
+  background-color: #fff;
+  padding: 20px 40px 0 40px;
 }
 .content-hd .title {
   width: 100%;
-  font-size: 52px;
+  font-size: 34px;
   font-weight: 300;
   padding: 0;
 }
-.content-hd .name {
-  text-align: center;
+.content-hd .title .name {
+  font-size: 34px;
   color: #40a9ff;
 }
-.content-hd .name h1 {
-  margin-top: 10px;
-  font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
-  font-weight: 500;
-  letter-spacing: 5px;
-}
-.content-hd .name small {
-  font-weight: 400;
-  letter-spacing: 0;
-  font-size: 24px;
-  padding-left: 10px;
-}
-.content-hd .job {
-  text-align: center;
-  color: #40a9ff;
-  font-size: 24px;
-}
-.content-hd .my {
-  padding: 0 200px;
-}
-.content-hd .my:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.content-hd .my section {
-  padding: 0;
+.content-hd .title .job {
+  font-size: 20px;
 }
 .content-hd .info {
-  float: left;
-  color: #555;
-  line-height: 30px;
-}
-.content-hd .contact {
-  float: right;
-}
-.content-hd .contact ul {
-  padding: 0;
-  list-style: none;
-  margin: 8px 0 4px;
-}
-.content-hd .contact ul > li {
-  height: 22px;
   margin-top: 10px;
 }
-.content-hd .contact ul > li > a {
-  color: #555;
-  font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
-  font-size: 18px;
-  line-height: 22px;
+.content-hd .info span {
+  display: inline-block;
+  margin-right: 10px;
 }
-.content-hd .contact ul > li > a:hover {
-  color: #999;
-}
-.content-hd .contact ul > li > a .iconfont {
-  margin-left: 0px;
-}
-.content-hd .skill-level {
-  padding-top: 60px;
-}
-.content-hd .skill-level h3 {
-  color: #999;
-  margin-left: 5px;
-}
-.content-hd .skill-level .item {
-  display: flex;
-  width: 100%;
-  height: 12px;
-  border-radius: 6px;
-  margin-bottom: 15px;
-  background: #d7d7d7;
-}
-.content-hd .skill-level .item .in {
-  background: #40a9ff;
-  height: 12px;
-  width: 12px;
-}
-.content-hd .skill-level .item .out {
-  background: #d7d7d7;
-  height: 12px;
-  width: 12px;
-}
-.content-hd .skill-level .item .in:first-child {
-  border-radius: 6px 0 0 6px;
-}
-.content-hd .skill-level .item .out:last-child {
-  border-radius: 0 6px 6px 0;
+.content-hd .contact a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
 }
 .content-bd {
   display: flex;
@@ -331,7 +257,7 @@ body {
 .content-bd .content-left {
   flex: 1 100%;
   order: 2;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 .content-bd .content-right {
   box-sizing: border-box;
@@ -477,9 +403,24 @@ body {
 .content-bd .prize .item-time {
   width: 15%;
 }
+@media screen and (max-width: 720px) {
+  .pdf,
+  .last-modified {
+    display: none;
+  }
+  .content {
+    position: inherit;
+    width: 100%;
+    margin: 0;
+  }
+  .content .content-left {
+    width: 100%;
+    padding: 0;
+  }
+}
 @media print {
   @page {
-    margin: 0;
+    margin: 20px 0;
   }
   body {
     background-color: #fff;
@@ -493,5 +434,6 @@ body {
     border-radius: 0;
     padding: 0;
     background: #fff;
+    box-shadow: none;
   }
 }
