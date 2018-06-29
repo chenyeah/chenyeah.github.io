@@ -335,6 +335,7 @@ body {
   display: inline-block;
   float: left;
   color: #ec7175;
+  font-weight: bold;
 }
 .content-bd .item-hd .btn {
   display: inline-block;
@@ -355,8 +356,14 @@ body {
   word-break: break-all;
   line-height: 22px;
 }
+.content-bd .section-content > div:last-child {
+  margin-top: 10px;
+}
 .content-bd .section-content .iconfont {
   color: #40a9ff;
+}
+.content-bd .section-content a {
+  text-decoration: underline;
 }
 .content-bd .section-content em {
   display: inline-block;
@@ -369,7 +376,7 @@ body {
   border-radius: 3px;
   margin: 2px;
   padding: 2px 4px;
-  background-color: #efefef;
+  background-color: #ddd;
   /* color: #c1788b; */
 }
 .content-bd .section-content strong {
@@ -385,6 +392,9 @@ body {
   margin: 2px;
   padding: 0 3px;
   background-color: #f6f6f6;
+}
+.content-bd .section-content b {
+  font-weight: bold;
 }
 .content-bd .skill .section-content {
   margin-bottom: 5px;
