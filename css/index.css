@@ -145,7 +145,7 @@ summary {
   /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
 }
 .iconfont {
-  color: #40a9ff;
+  color: #2bbc8a;
   font-family: "iconfont" !important;
   font-size: 24px;
   font-style: normal;
@@ -193,7 +193,7 @@ body {
   color: #fff;
   font-size: 16px;
   line-height: 26px;
-  background-color: #40a9ff;
+  background-color: #2bbc8a;
 }
 .last-modified {
   position: absolute;
@@ -231,7 +231,7 @@ body {
 }
 .content-hd .title .name {
   font-size: 34px;
-  color: #40a9ff;
+  color: #2bbc8a;
 }
 .content-hd .title .job {
   font-size: 20px;
@@ -320,7 +320,7 @@ body {
   font-weight: 500;
 }
 .content-bd .item-hd .iconfont {
-  color: #40a9ff;
+  color: #2bbc8a;
 }
 .content-bd .item-hd .item-time {
   display: inline-block;
@@ -340,10 +340,11 @@ body {
 .content-bd .item-hd .btn {
   display: inline-block;
   padding: 0 5px;
-  border: 1px solid #40a9ff;
+  border: 1px solid #2bbc8a;
   border-radius: 3px;
-  color: #40a9ff;
-  font-family: Menlo, "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
+  color: #2bbc8a;
+  font-family: Menlo, "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei",
+    sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -360,14 +361,15 @@ body {
   margin-top: 10px;
 }
 .content-bd .section-content .iconfont {
-  color: #40a9ff;
+  color: #2bbc8a;
 }
 .content-bd .section-content a {
   text-decoration: underline;
 }
 .content-bd .section-content em {
   display: inline-block;
-  font-family: Menlo, "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
+  font-family: Menlo, "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei",
+    sans-serif;
   font-size: 12px;
   line-height: 14px;
   /* border: 1px solid #d1d1d1; */
