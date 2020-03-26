@@ -1,2 +1,2 @@
 # Resume
-![img](https://github.com/chenyeah/resume/raw/master/template/resume.png)
+![img](https://github.com/cyea/resume/raw/master/template/resume.png)
